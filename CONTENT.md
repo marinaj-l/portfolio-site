@@ -15,3 +15,6 @@ I lead the MSU Fighting Game Club, which I have been doing for the past four yea
 
 ### Video content
 I create video content both on my Youtube and my Twitter for fighting games. These videos range from frequent short-form entertainment content tailored for Twitter to more infrequent long-form educational content made for Youtube.
+
+## Contact
+Email me at marinajl@msu.edu

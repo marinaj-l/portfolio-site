@@ -1,8 +1,8 @@
 # Luciano Marinaj
 
-Luciano Marinaj - Aspiring UX Designer, writer, and community leader from Warren, Michigan
+Luciano Marinaj - Aspiring UX Designer and community leader from Warren, Michigan
 
-I am currently working on my Bachelor's degree in Information Science at Michigan State University with a minor in Business, where I have been heavily involved in fostering a community as the long-time president of the MSU Fighting Game Club. In my spare time, I like to read world literature, write, and create videos.
+My name is Luciano! I am currently working on my Bachelor's degree in Information Science at Michigan State University with a minor in Business, where I have been heavily involved in fostering a community as the long-time president of the MSU Fighting Game Club. In my spare time, I like to read world literature, write, and create videos.
 
 ## Projects
 ### michiganfgc.com

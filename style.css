@@ -7,8 +7,22 @@
     --page-margin: 5rem;
 }
 
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(fonts/playfair-display-normal-400\ 900.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monteserrat";
+    src: url(fonts/montserrat-normal-100\ 900.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: "Monteserrat", sans-serif;
     background: var(--primary-bg);
     color: var(--primary-text);
     margin: 0;
@@ -63,6 +77,8 @@ header {
 }
 
 #hero h1 {
+    font-family: "PlayfairDisplay", sans-serif;
+    font-weight: 750;
     font-size: 4em;
     text-align: center;
     line-height: 1.3em;

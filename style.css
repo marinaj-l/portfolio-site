@@ -1,0 +1,16 @@
+:root {
+    --primary-bg: #EA526F;
+    --secondary-bg: #23B5D3;
+    --primary-text: #F7F7FF;
+    --secondary: #070600;
+    --highlight: #279AF1;
+    --page-margin: 5rem;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    margin: 0;
+}
+

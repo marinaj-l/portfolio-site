@@ -47,7 +47,7 @@ p {
 
 h2 {
     font-size: 3em;
-    font-weight: normal;
+    font-weight: 550;
     border-bottom: 3px solid var(--secondary-bg);
 }
 
@@ -78,6 +78,10 @@ nav ul li a {
 nav ul li a:hover {
     font-size: 1.9rem;
     background: var(--highlight);
+}
+
+nav ul li a:visited {
+    color:var(--secondary-bg);
 }
 
 img {

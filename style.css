@@ -88,7 +88,7 @@ img {
     max-width: 100%;
     height: auto;
     border: 1px solid var(--highlight);
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 #portrait img:hover {

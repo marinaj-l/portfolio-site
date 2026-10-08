@@ -7,21 +7,6 @@
     --page-margin: 5rem;
 }
 
-/* @font-face {
-    font-family: "PlayfairDisplay";
-    src: url(fonts/playfair-display-normal-400\ 900.woff2);
-    font-weight: 750;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Monteserrat";
-    src: url(fonts/montserrat-normal-100\ 900.woff2);
-    font-weight: 550;
-    font-style: normal;
-}
-*/
-
 body {
     font-family: "Monteserrat", sans-serif;
     background: var(--primary-bg);
@@ -76,7 +61,7 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a:focus {
     font-size: 1.9rem;
     background: var(--highlight);
 }
@@ -90,6 +75,11 @@ img {
     height: auto;
     border: 1px solid var(--highlight);
     border-radius: 9px;
+}
+
+.fgcimg {
+    text-align: center;
+    margin: 0 auto;
 }
 
 #portrait img:hover {
@@ -122,4 +112,13 @@ main {
 .copyright {
     font-size: 1.1rem;
     padding-left: var(--page-margin);
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --page-margin: 2rem;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
 }

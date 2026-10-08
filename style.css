@@ -10,14 +10,14 @@
 @font-face {
     font-family: "PlayfairDisplay";
     src: url(fonts/playfair-display-normal-400\ 900.woff2);
-    font-weight: normal;
+    font-weight: 750;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Monteserrat";
     src: url(fonts/montserrat-normal-100\ 900.woff2);
-    font-weight: normal;
+    font-weight: 550;
     font-style: normal;
 }
 

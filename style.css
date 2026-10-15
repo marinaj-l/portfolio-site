@@ -46,7 +46,7 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -118,6 +118,15 @@ main {
 
 @media (min-width: 600px) {
 
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
     /* AI disclosure:
     Prompt used: Please tweak my grid layout in the 600px media query so that it works across the entire screen and is formatted correctly to how I have it outlined. 
     
@@ -134,6 +143,7 @@ main {
     }
 
     nav {
+        max-height: 40%;
         grid-column: span 5;
     }
 

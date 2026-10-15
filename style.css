@@ -4,7 +4,7 @@
     --primary-text: #F7F7FF;
     --secondary: #070600;
     --highlight: #279AF1;
-    --page-margin: 5rem;
+    --page-margin: 2rem;
 }
 
 body {
@@ -95,7 +95,7 @@ header {
 #hero h1 {
     font-family: "Playfair+Display", sans-serif;
     font-weight: 750;
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     line-height: 1.5em;
     letter-spacing: -1px;
@@ -114,11 +114,57 @@ main {
     padding-left: var(--page-margin);
 }
 
-@media screen and (max-width: 768px) {
-    :root {
-        --page-margin: 2rem;
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 8px;
+        width: 100%;
     }
-    #hero h1 {
-        font-size: 2rem;
+
+    #portrait {
+        grid-column: span 1 / span 1
+    }
+
+    nav {
+        grid-column: span 5 / span 5
+    }
+
+    #hero {
+        grid-column: span 6 / span 6;
+        grid-row: span 2 / span 2;
+        grid-row-start: 2;
+    }
+
+    #about {
+        grid-column: span 6 / span 6;
+        grid-row: span 2 / span 2;
+        grid-row-start: 4;
+    }
+
+    #project1 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-row-start: 5;
+    }
+
+    #project2 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 5;
+    }
+
+    #project3 {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+        grid-row-start: 5;
+    }
+
+    #contact {
+        grid-column: span 6 / span 6;
+        grid-row-start: 6;
     }
 }

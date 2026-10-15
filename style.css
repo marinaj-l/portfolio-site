@@ -116,7 +116,7 @@ main {
     padding-left: var(--page-margin);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 728px) {
 
     nav ul {
         flex-direction: row;
@@ -154,6 +154,7 @@ main {
     }
 
     #hero {
+        font-size: 2.3rem;
         grid-column: 1 / -1;
     }
 
@@ -175,4 +176,8 @@ main {
     #contact {
         grid-column: 1 / -1;
     }
+}
+
+@media (min-width: 1024px) {
+    
 }

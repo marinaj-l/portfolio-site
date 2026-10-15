@@ -196,6 +196,11 @@ main {
         grid-column: 1 / -1;
     }
 
+    .fgcimg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #contact {
         grid-column: 1 / -1;
     }

@@ -115,56 +115,52 @@ main {
 }
 
 @media (min-width: 600px) {
-    body {
+
+    /* AI disclosure:
+    Prompt used: Please tweak my grid layout in the 600px media query so that it works across the entire screen and is formatted correctly to how I have it outlined. 
+    
+    Output: Updated the 600px-and-up grid in style.css: the layout now applies to the elements that contain the grid items, the page sections span the available width, and the three project articles flow into equal columns. Removed fixed row placements that could overlap as content changes. The stylesheet reports no errors.*/
+
+    header {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(6, minmax(0, 1fr));
         gap: 8px;
-        width: 100%;
     }
 
     #portrait {
-        grid-column: span 1 / span 1
+        grid-column: span 1;
     }
 
     nav {
-        grid-column: span 5 / span 5
+        grid-column: span 5;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
     }
 
     #hero {
-        grid-column: span 6 / span 6;
-        grid-row: span 2 / span 2;
-        grid-row-start: 2;
+        grid-column: 1 / -1;
     }
 
     #about {
-        grid-column: span 6 / span 6;
-        grid-row: span 2 / span 2;
-        grid-row-start: 4;
+        grid-column: 1 / -1;
     }
 
-    #project1 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-row-start: 5;
+    #projects {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
     }
 
-    #project2 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 5;
-    }
-
-    #project3 {
-        grid-column: span 2 / span 2;
-        grid-row: span 2 / span 2;
-        grid-column-start: 5;
-        grid-row-start: 5;
+    #projects h2 {
+        grid-column: 1 / -1;
     }
 
     #contact {
-        grid-column: span 6 / span 6;
-        grid-row-start: 6;
+        grid-column: 1 / -1;
     }
 }

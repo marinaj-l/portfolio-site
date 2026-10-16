@@ -196,14 +196,21 @@ main {
         grid-column: 1 / -1;
     }
 
+    /* AI Disclosure:
+    Prompt used: Please, using the grid defined in the 768px media query for the .fgcimg, center the two pictures across the page while also keeping the original aspect ratio and size the same.
+
+    Output: Updated the existing grid rules in style.css: the two-column figure keeps its 200% width and is centered over the middle project column, while the caption spans both columns. The images’ sizing and aspect ratio remain unchanged. The grid is currently under @media (min-width: 728px), rather than 768px. git diff --check passes. */
+
     .fgcimg {
         display: grid;
+        gap: 5rem;
         grid-template-columns: repeat(2, 1fr);
         width: 200%;
-        
+        margin-left: -50%;
     }
 
     figcaption {
+        grid-column: 1 / -1;
         text-align: center;
         margin-top: 8px;
     }

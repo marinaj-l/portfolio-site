@@ -199,14 +199,21 @@ main {
     /* AI Disclosure:
     Prompt used: Please, using the grid defined in the 768px media query for the .fgcimg, center the two pictures across the page while also keeping the original aspect ratio and size the same.
 
-    Output: Updated the existing grid rules in style.css: the two-column figure keeps its 200% width and is centered over the middle project column, while the caption spans both columns. The images’ sizing and aspect ratio remain unchanged. The grid is currently under @media (min-width: 728px), rather than 768px. git diff --check passes. */
+    Output: Updated the existing grid rules in style.css: the two-column figure keeps its 200% width and is centered over the middle project column, while the caption spans both columns. The images’ sizing and aspect ratio remain unchanged. The grid is currently under @media (min-width: 728px), rather than 768px. git diff --check passes. 
+    
+    Prompt used: make the fgcimg fit more aesthetically pleasing within the page
+    
+    Output: Adjusted .fgcimg in style.css to center it across the page and limit its width to 1000px or the available page width, whichever is smaller. The two-column layout remains, and the images keep their aspect ratios. git diff --check passes.*/
 
     .fgcimg {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(2, 1fr);
-        width: 200%;
-        margin-left: -50%;
+        width: min(1000px, calc(100vw - var(--page-margin) - var(--page-margin)));
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     figcaption {

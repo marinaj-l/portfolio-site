@@ -199,6 +199,13 @@ main {
     .fgcimg {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 200%;
+        
+    }
+
+    figcaption {
+        text-align: center;
+        margin-top: 8px;
     }
 
     #contact {

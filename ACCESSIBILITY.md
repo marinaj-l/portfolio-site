@@ -1,5 +1,3 @@
 # Accessibility Audit Results 
 
-## Page Contrast Improvements
-
-After a PageSpeed Insights audit, it was discovered there were accessibility problems on the site related to contrast issues. After slight tweaks to the color scheme of the website's main colors (switching the background color to a more muted blue and making the links white rather than pink) not only improved the score enough to score a 100 in accessibility, but also made the website more aesthetically colored as a whole.
+After a PageSpeed Insights audit, it was discovered there were accessibility problems on the site related to contrast issues. After slight tweaks to the color scheme of the website's main colors (switching the background color to a more muted blue and making the links white rather than pink) not only improved the score enough to score a 100 in accessibility, but also made the website more aesthetically pleasing as a whole.

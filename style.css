@@ -14,6 +14,14 @@
     --secondary: #151414;
     --highlight: #156D7F;
 }
+/* AI disclosure:
+Prompt used: Editing only style.css, please make the scrollbar function from PageBar.js automatically switch color to --highlight (in :root selector) when the button defined in dark-mode.js is pressed, and allow it to be switched back to light mode as well.
+
+Output: Added a dark-mode override in style.css: PageBar.js’s .bar uses the current --highlight color when dark mode is active. When the button switches back to light mode, the override no longer applies and the bar returns to its existing color. Only style.css was changed; git diff --check passes.
+*/
+[dark-mode="dark"] .bar {
+    background: var(--highlight);
+}
 
 body {
     font-family: "Monteserrat", sans-serif;

@@ -11,7 +11,7 @@
     --primary-bg: #070600;
     --secondary-bg: #279AF1;
     --primary-text: #F7F7FF;
-    --secondary: #FFFFFF;
+    --secondary: #151414;
     --highlight: #156D7F;
 }
 
@@ -71,6 +71,15 @@ nav ul li a {
     font-size: 1.8rem;
     padding: 1rem 2rem;
     display: inline-block;
+}
+
+#dark-mode-toggle {
+    background: var(--highlight);
+    color: var(--primary-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 nav ul li a:hover, nav ul li a:focus {

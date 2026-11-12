@@ -4,7 +4,7 @@ function pb_init({
   color = "#F7F7FF",
   height = "5",
   shadow = "10px",
-  shadowColor = "#f00",
+  shadowColor = "#ff0000",
   borderRadius = "10",
 } = {}) {
   const style = document.createElement("style");

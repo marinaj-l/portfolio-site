@@ -256,6 +256,38 @@ Output: Updated style.css so the toggle button stays within the nav item on smal
     }
 }
 
+@media (min-width: 700px) and (max-width: 812px) {
+    /* 
+    AI disclosure:
+    Prompt(s) used:Please create a new media query specifically targeting around the 700-800px width range that prevents #dark-mode-toggle from clipping the dimensions of the nav box. 
+
+    There is still clipping around the 700-800 pixel width due to the text wrapping making the box too big. Please fix it
+
+    Output(s):
+
+    Updated style.css so the toggle button stays within the nav item on smaller screens and has a slight bottom margin. The margin resets at the existing 728px breakpoint to preserve the wider-screen layout. git diff --check passes.
+
+    Added a 700–800px media query in style.css. It allows nav items to wrap and removes the nav’s height cap in that range so the toggle can fit without clipping. git diff --check passes.
+    */
+    nav {
+        max-height: none;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav ul li a {
+        padding: 1rem 0.5rem;
+    }
+
+    #dark-mode-toggle {
+        padding: 0.5rem;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}
+
 @media (min-width: 1024px) {
     #hero h1 {
         font-size: 2.6rem;

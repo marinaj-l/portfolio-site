@@ -78,6 +78,9 @@ nav ul li a {
     color: var(--primary-text);
     border: none;
     padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -135,6 +138,12 @@ main {
     padding-left: var(--page-margin);
 }
 
+/* AI disclosure:
+Prompt used: Using only my style.css file and the media queries that are already set, please make the #dark-mode-toggle button not clip the barriers of the nav bar on smaller screens, and add slight margin/padding to the bottom so it looks consistent with the rest of the buttons.
+
+Output: Updated style.css so the toggle button stays within the nav item on smaller screens and has a slight bottom margin. The margin resets at the existing 728px breakpoint to preserve the wider-screen layout. git diff --check passes.
+*/
+
 @media (min-width: 576px) {
     #hero h1 {
         font-size: 2.1rem;
@@ -157,6 +166,10 @@ main {
 
     nav ul li a {
         font-size: 1.5rem;
+    }
+
+    #dark-mode-toggle {
+        margin-bottom: 0;
     }
 
     nav ul li a:hover, nav ul li a:focus {

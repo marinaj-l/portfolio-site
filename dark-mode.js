@@ -6,10 +6,13 @@ Output: Implemented a toggleBtn() function in dark-mode.js. Clicking the existin
 
 function toggleBtn() {
   const root = document.documentElement;
+  const btn = document.getElementById('dark-mode-toggle');
 
   if (root.getAttribute('dark-mode') === 'dark') {
     root.removeAttribute('dark-mode');
+    btn.textContent = 'Toggle Dark Mode';
   } else {
     root.setAttribute('dark-mode', 'dark');
+     btn.textContent = 'Toggle Light Mode';
   }
 }

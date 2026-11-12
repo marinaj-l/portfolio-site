@@ -7,6 +7,14 @@
     --page-margin: 2rem;
 }
 
+[dark-mode="dark"] {
+    --primary-bg: #070600;
+    --secondary-bg: #279AF1;
+    --primary-text: #F7F7FF;
+    --secondary: #FFFFFF;
+    --highlight: #156D7F;
+}
+
 body {
     font-family: "Monteserrat", sans-serif;
     background: var(--primary-bg);
